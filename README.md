@@ -1,5 +1,6 @@
 # Car-Service-prototype
 java files and SQL codes.
+<br>
 The link to the phpMyAdmin is: https://www.phpmyadmin.co/index.php
 
 All the info about the database:-
