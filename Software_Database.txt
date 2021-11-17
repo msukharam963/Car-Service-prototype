@@ -1,0 +1,45 @@
+create database CarService;
+
+use CarService;
+
+create table customer
+(Cust_Id varchar(20) PRIMARY KEY,
+Name varchar(50) NOT NULL,
+Email_ID varchar(30) NOT NULL,
+Phone_no bigint(10) NOT NULL,
+password varchar(15) NOT NULL
+);
+
+create table employee
+(User_name varchar(20) PRIMARY KEY,
+Name varchar(50) NOT NULL,
+Email_ID varchar(30) NOT NULL,
+Phone_no bigint(10) NOT NULL,
+password varchar(15) NOT NULL
+);
+
+create table service_temp
+(User_name varchar(20) NOT NULL,
+Car_name varchar(30),
+car_no varchar(15) primary key,
+payable_amount integer(10),
+time_required integer(2),
+services varchar(250),
+Exchange_Selected varchar(5)
+);
+
+create table service_request
+(User_name varchar(20) NOT NULL,
+Car_name varchar(30),
+car_no varchar(15) primary key,
+payable_amount integer(10),
+time_required integer(2),
+services varchar(250),
+Exchange_Selected varchar(5),
+garage varchar(10),
+service_status varchar(10)
+);
+insert into customer (User_name,Name,Email_ID,Phone_no,password)
+values('Msukharam','Mihir Sukharamwala','msukharamwala963@gmail.com','8401682005','abcxyz');
+insert into customer values('pThakkar','Priyansh Thakkar','priyanshthakkar29@gmail.com',8401512927,'blah');
+insert into customer values('V7','Vishal Soneji','vishalsoneji21@gmail.com',7203906777,'abcxyz');
